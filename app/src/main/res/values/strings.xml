@@ -46,7 +46,13 @@
     <string name="stock_trend_title">%s History</string>
     <string name="stock_trend_label">Symbol %s Trends</string>
     <string name="stock_trend_content_description">Symbol %s Graph</string>
+
+    <!-- Widget Strings -->
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+
+    <string name="widget_title">Stocks</string>
+    <string name="widget_no_stock_error">No stocks available</string>
+
 
 </resources>
