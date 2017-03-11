@@ -24,18 +24,19 @@
         android:layout_height="0dp"
         android:layout_weight="1">
         <ListView
-            android:id="@+id/widget_list"
+            android:id="@+id/widget_stock_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:divider="@null"
             android:dividerHeight="0dp"
-            tools:listitem="@layout/list_item_quote"/>
+            tools:listitem="@layout/widget_list_item_quote"/>
         <TextView
             android:id="@+id/widget_error"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-            android:text="@string/widget_no_stock_error"/>
+            android:text="@string/widget_no_stock_error"
+            android:visibility="gone"/>
     </FrameLayout>
 </LinearLayout>

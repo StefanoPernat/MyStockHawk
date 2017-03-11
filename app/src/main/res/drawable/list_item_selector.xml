@@ -4,5 +4,5 @@
     <item android:state_activated="true" android:drawable="@color/material_blue_500" />
     <item android:state_selected="true" android:drawable="@color/material_blue_500" />
 
-    <!--<item android:drawable="@android:color/background_dark"/> -->
+    <item android:drawable="@android:color/transparent"/>
 </selector>
