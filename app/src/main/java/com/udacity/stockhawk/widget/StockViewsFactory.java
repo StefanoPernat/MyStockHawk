@@ -135,14 +135,8 @@ public class StockViewsFactory implements RemoteViewsService.RemoteViewsFactory 
                 MainActivity.SYMBOL_SELECTED_EXTRA,
                 mStockCursor.getString(Contract.Quote.POSITION_SYMBOL)
         );
-        PendingIntent pendingIntent = PendingIntent.getActivity(
-                mContext,
-                0,
-                trendActivityIntent,
-                0
-        );
 
-        views.setOnClickPendingIntent(R.id.item_view, pendingIntent);
+        views.setOnClickFillInIntent(R.id.item_view, trendActivityIntent);
 
         return views;
     }

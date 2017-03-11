@@ -24,6 +24,9 @@ import timber.log.Timber;
  */
 public class StockWidgetProvider extends AppWidgetProvider {
 
+    //  COMPLETED RUBIC PART 3
+    //  Implemented Widget
+
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
 
@@ -39,16 +42,26 @@ public class StockWidgetProvider extends AppWidgetProvider {
 
 
         //  Create Intent to launch TrendActivity
-        Intent trendActivityIntent = new Intent(context, MainActivity.class);
+        Intent mainActivityIntent = new Intent(context, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(
                 context,
                 0,
-                trendActivityIntent,
+                mainActivityIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT
         );
 
         views.setOnClickPendingIntent(R.id.widget_toolbar, pendingIntent);
 
+
+        Intent detailActivityIntent = new Intent(context, StockTrendActivity.class);
+        PendingIntent pendingIntentDetail = PendingIntent.getActivity(
+                context,
+                0,
+                detailActivityIntent,
+                PendingIntent.FLAG_UPDATE_CURRENT
+        );
+
+        views.setPendingIntentTemplate(R.id.widget_stock_list, pendingIntentDetail);
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
