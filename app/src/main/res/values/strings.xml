@@ -54,5 +54,11 @@
     <string name="widget_title">Stocks</string>
     <string name="widget_no_stock_error">No stocks available</string>
 
+    <!-- tools:text strings -->
+    <string name="tools_error_message_text">Error Message</string>
+    <string name="tools_symbol" translatable="false">GOOG</string>
+    <string name="tools_price" translatable="false">1000.00</string>
+    <string name="tools_change" translatable="false">100%</string>
+
 
 </resources>
