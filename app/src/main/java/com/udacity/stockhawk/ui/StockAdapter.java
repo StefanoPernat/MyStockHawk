@@ -66,9 +66,6 @@ class StockAdapter extends RecyclerView.Adapter<StockAdapter.StockViewHolder> {
 
         cursor.moveToPosition(position);
 
-
-        //  COMPLETED RUBIC POINT 4
-        //  Added Content Description also inside view holder
         holder.symbol.setText(cursor.getString(Contract.Quote.POSITION_SYMBOL));
         holder.price.setText(dollarFormat.format(cursor.getFloat(Contract.Quote.POSITION_PRICE)));
         holder.symbol.setContentDescription(cursor.getString(Contract.Quote.POSITION_SYMBOL));

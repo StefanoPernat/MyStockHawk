@@ -1,10 +1,5 @@
 <resources>
 
-    <!--
-        COMPLETED RUBIC PART 6
-        Added translatable=false tag to untranslatable strings
-    -->
-
     <string name="app_name">Stock Hawk</string>
 
     <string name="pref_stocks_initialized_key" translatable="false">initialized</string>

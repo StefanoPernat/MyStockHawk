@@ -78,15 +78,6 @@ public final class QuoteSyncJob {
                 Stock stock = quotes.get(symbol);
                 StockQuote quote = stock.getQuote();
 
-                //  COMPLETED RUBIC POINT 2:
-                //  if a quote does not have a price, means that the symbol associated with the quote
-                //  does not exists
-                //  if
-                //      the price is not null then get all the value associated with it and save to
-                //      the content provider
-                //  otherwise
-                //      don't do anything and continue
-
                 if (quote.getPrice() != null) {
                     float price = quote.getPrice().floatValue();
                     float change = quote.getChange().floatValue();

@@ -7,10 +7,6 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.Manifest.permission.RECEIVE_BOOT_COMPLETED"/>
 
-    <!--
-     COMPLETED RUBIC PART 5
-     Added support to Rtl
-    -->
     <application
         android:name=".StockHawkApp"
         android:allowBackup="false"
